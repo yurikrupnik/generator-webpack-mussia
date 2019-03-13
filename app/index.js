@@ -5,7 +5,7 @@ class Webpack extends Generator {
         // if (filters.fullstack) {
             this.fs.copyTpl(
                 this.templatePath(),
-                this.destinationRoot('daddy')
+                this.destinationRoot()
             );
         // } else {
         //     this.fs.copy(
@@ -15,14 +15,14 @@ class Webpack extends Generator {
         // }
     }
     configuring() {
-        this.destinationRoot(__dirname);
+        // this.destinationRoot(__dirname);
         // this._createFilters(this.answers);
         // this.config.set(this.filters);
     }
     writing() {
-        console.log('this.filters', this.filters);
-console.log('this.options.appname', this.options.appname);
-        console.log('this.config', this.config);
+        // console.log('this.filters', this.filters);
+// console.log('this.options.appname', this.options.appname);
+//         console.log('this.config', this.config);
 
         const {options, filters} = this;
         this._handleWebpack(filters);
