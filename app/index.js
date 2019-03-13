@@ -5,7 +5,7 @@ class Webpack extends Generator {
         // if (filters.fullstack) {
             this.fs.copyTpl(
                 this.templatePath(),
-                this.destinationRoot(this.contextRoot)
+                this.destinationRoot(this.options.appname)
             );
         // } else {
         //     this.fs.copy(
@@ -21,6 +21,8 @@ class Webpack extends Generator {
     }
     writing() {
         console.log('this.filters', this.filters);
+console.log('this.options.appname', this.options.appname);
+        console.log('this.config', this.config);
 
         const {options, filters} = this;
         this._handleWebpack(filters);
