@@ -15,11 +15,13 @@ class Webpack extends Generator {
         // }
     }
     configuring() {
-        this.destinationRoot(this.options.appname);
+        // this.destinationRoot(this.options.appname);
         // this._createFilters(this.answers);
         // this.config.set(this.filters);
     }
     writing() {
+        console.log('this.filters', this.filters);
+
         const {options, filters} = this;
         this._handleWebpack(filters);
     }
