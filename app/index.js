@@ -5,7 +5,7 @@ class Webpack extends Generator {
         // if (filters.fullstack) {
             this.fs.copyTpl(
                 this.templatePath(),
-                this.destinationRoot(this.options.appname)
+                this.destinationRoot('daddy')
             );
         // } else {
         //     this.fs.copy(

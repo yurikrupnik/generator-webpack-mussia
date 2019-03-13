@@ -1,6 +1,6 @@
 {
   "name": "generator-webpack-mussia",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Yeoman generator for Webpack",
   "main": "app/index.js",
   "scripts": {
