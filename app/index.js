@@ -2,17 +2,17 @@ var Generator = require('yeoman-generator');
 
 class Webpack extends Generator {
     _handleWebpack(filters) {
-        if (filters.fullstack) {
+        // if (filters.fullstack) {
             this.fs.copyTpl(
-                this.templatePath('webpack/**'),
+                this.templatePath(),
                 this.destinationRoot()
             );
-        } else {
-            this.fs.copy(
-                this.templatePath('webpack/webpack.config.client.js'),
-                this.destinationPath('webpack.config.client.js')
-            );
-        }
+        // } else {
+        //     this.fs.copy(
+        //         this.templatePath('webpack/webpack.config.client.js'),
+        //         this.destinationPath('webpack.config.client.js')
+        //     );
+        // }
     }
     configuring() {
         this.destinationRoot(this.options.appname);
