@@ -27,6 +27,13 @@ class Webpack extends Generator {
         const {options, filters} = this;
         this._handleWebpack(filters);
     }
+
+    install() {
+        this.npmInstall([
+            'koa',
+            'koa-router'
+        ])
+    }
 }
 
 module.exports = Webpack;
