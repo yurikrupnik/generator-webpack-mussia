@@ -15,7 +15,7 @@ class Webpack extends Generator {
         // }
     }
     configuring() {
-        this.destinationRoot();
+        this.destinationRoot(this.contextRoot);
         // this._createFilters(this.answers);
         // this.config.set(this.filters);
     }
