@@ -10,12 +10,12 @@ class Webpack extends Generator {
         // } else {
             this.fs.copy(
                 this.templatePath('webpack.config.client.js'),
-                this.destinationPath(this.contextRoot)
+                this.destinationPath(this.destinationRoot())
             );
         // }
     }
     configuring() {
-        this.destinationRoot();
+        // this.destinationRoot();
         // this._createFilters(this.answers);
         // this.config.set(this.filters);
     }
