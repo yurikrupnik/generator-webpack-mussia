@@ -9,7 +9,7 @@ class Webpack extends Generator {
         //     );
         // } else {
             this.fs.copy(
-                this.templatePath('webpack/webpack.config.client.js'),
+                this.templatePath('webpack.config.client.js'),
                 this.destinationPath('webpack.config.client.js')
             );
         // }
